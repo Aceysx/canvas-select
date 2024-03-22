@@ -731,7 +731,7 @@ export default class CanvasSelect extends EventBus {
         if (!creating) this.ctx.fillRect(x0, y0, w, h);
         this.ctx.strokeRect(x0, y0, w, h);
         this.ctx.restore();
-        this.drawLabel(coor[0], shape);
+        this.drawLabel(coor[coor.length-1], shape);
     }
 
     /**
@@ -763,7 +763,7 @@ export default class CanvasSelect extends EventBus {
         this.ctx.fill();
         this.ctx.stroke();
         this.ctx.restore();
-        this.drawLabel(coor[0], shape);
+        this.drawLabel(coor[coor.length-1], shape);
     }
 
     /**
@@ -831,7 +831,7 @@ export default class CanvasSelect extends EventBus {
         }
         this.ctx.stroke();
         this.ctx.restore();
-        this.drawLabel(coor[0], shape);
+        this.drawLabel(coor[coor.length-1], shape);
     }
 
     /**
